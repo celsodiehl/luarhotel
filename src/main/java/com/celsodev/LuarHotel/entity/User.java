@@ -27,10 +27,10 @@ public class User implements UserDetails {
     @NotBlank(message = "Nome é Obrigatório")
     private String name;
 
-    @NotBlank(message = "Phone Number é Obrigatório")
+    @NotBlank(message = "Número de Telefone é Obrigatório")
     private String phoneNumber;
 
-    @NotBlank(message = "Password é Obrigatório")
+    @NotBlank(message = "Senha é Obrigatório")
     private String password;
 
     private String role;
