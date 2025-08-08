@@ -13,7 +13,7 @@ import java.util.List;
 
 @Data
 @Entity
-@Table(name = "users")
+@Table(name = "users")  //Classe UserDetails do SpringSecurity
 public class User implements UserDetails {
 
     @Id
