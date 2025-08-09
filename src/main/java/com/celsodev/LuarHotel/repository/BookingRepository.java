@@ -12,7 +12,7 @@ public interface BookingRepository extends JpaRepository<Booking, Long> {
     List<Booking> findByRoomId(Long roomId);
 
     //Busca por código de confirmação de reserva
-    List<Booking> findByBookingConfirmationCode(String confirmationCode);
+    Optional<Booking> findByBookingConfirmationCode(String confirmationCode);
 
     //Busca por Id de usuário
     List<Booking> findByUserId(Long userId);
