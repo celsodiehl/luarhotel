@@ -72,4 +72,33 @@ public class User implements UserDetails {
     public boolean isEnabled() {
         return true;
     }
+
+    public @NotBlank(message = "Nome é Obrigatório") String getName() {
+        return name;
+    }
+
+    public void setName(@NotBlank(message = "Nome é Obrigatório") String name) {
+        this.name = name;
+    }
+
+    public @NotBlank(message = "Número de Telefone é Obrigatório") String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public void setPhoneNumber(@NotBlank(message = "Número de Telefone é Obrigatório") String phoneNumber) {
+        this.phoneNumber = phoneNumber;
+    }
+
+    public @NotBlank(message = "Email é Obrigatório") String getEmail() {
+        return email;
+    }
+
+    public void setEmail(@NotBlank(message = "Email é Obrigatório") String email) {
+        this.email = email;
+    }
+
+    public void setPassword(@NotBlank(message = "Senha é Obrigatório") String password) {
+        this.password = password;
+    }
+
 }

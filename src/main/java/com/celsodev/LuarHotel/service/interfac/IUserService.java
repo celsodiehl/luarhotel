@@ -3,6 +3,7 @@ package com.celsodev.LuarHotel.service.interfac;
 import com.celsodev.LuarHotel.dto.LoginRequest;
 import com.celsodev.LuarHotel.dto.Response;
 import com.celsodev.LuarHotel.entity.User;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 public interface IUserService {
 

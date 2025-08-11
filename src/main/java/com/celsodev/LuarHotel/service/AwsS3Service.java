@@ -2,10 +2,12 @@ package com.celsodev.LuarHotel.service;
 
 import com.celsodev.LuarHotel.exception.OurException;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.InputStream;
 
+@Service
 public class AwsS3Service {
 
     private final String bucketName = "luar-hotel";
